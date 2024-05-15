@@ -1,0 +1,91 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body, html {
+  background-color: var(--off-black);
+  font-family: 'Inter';
+}
+
+.attribution { 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  background-color: var(--dark-grey);
+  width: 20rem;
+  height: 35rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 3.5rem;
+  margin-top: 1rem;
+}
+
+.profile-title {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 1rem 0 0.25rem 0;
+}
+
+.profile-subtitle {
+  color: var(--green);
+  margin: 0.25rem 0;
+}
+
+.profile-paragraph {
+  color: var(--white);
+  margin: 2rem 0;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.semi-bold-text {
+  font-weight: 600;
+}
+
+.btn-container {
+  width: 90%;
+  height: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  background-color: var(--grey);
+  padding: 0.75rem 0;
+  color: var(--white);
+}
+
+.credit {
+  color: var(--white);
+}
