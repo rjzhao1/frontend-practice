@@ -19,7 +19,7 @@ html,body {
 }
 
 .attribution { 
-  font-size: 11px; 
+  font-size: 16px; 
   text-align: center;
   height: 100%;
   display: flex;
@@ -31,9 +31,9 @@ html,body {
 
 .card {
   position: relative;
-  top: 20%;
+  top: 25%;
   width: 20rem;
-  height: 27rem;
+  height: 30rem;
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: 10px 10px;
