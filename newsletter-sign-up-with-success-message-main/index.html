@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="success.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  
+  <div class="attribution">
+    <!-- Success Message -->
+    <div class="success-container hidden" id="success-form">
+      <div>
+        <img src="./assets/images/icon-success.svg" alt="success-check" class="success-check">
+        <p class="success-title">Thanks for subscribing!</p>
+        <div class="success-text-container">
+          <span class="success-text">
+            A confirmation email has been sent to 
+          </span>
+          <span class="success-text bold" id="success-email">
+          </span> 
+          <span class="success-text">
+            Please open it and click the button inside to confirm your subscription.
+          </span>
+        </div>
+      </div>
+      <button onclick="dismissMessage()">Dismiss message</button>
+    </div>
+    <!-- Desktop View -->
+    <div class="form-container desktop-display" id="desktop-form">
+      <div class="form-text-container">
+        <p class="form-title">Stay updated!</p>
+        <p class="form-text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="list-container">
+          <li class="form-text list-item">
+            <img src="./assets/images/icon-list.svg"> Product discovery and building what matters
+          </li>
+          <li class="form-text list-item">
+            <img src="./assets/images/icon-list.svg"> Measuring to ensure updates are a success
+          </li>
+          <li class="form-text list-item">
+            <img src="./assets/images/icon-list.svg"> And much more!
+          </li>
+        </ul>
+        <div class="label-container">
+          <p class="label-text">Email Address</p>
+          <p class="label-text error-text" id="error">Valid email required</p>
+        </div>
+        <input id="email" name="email" placeholder="email@company.com">
+        <button onclick="onSubmitDesktop()">Subscribe to monthly newsletter</button>
+      </div>
+      <div>
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up-desk" class="form-img">
+      </div>
+    </div>
+
+    <!-- Mobile View -->
+    <div class="mobile-display" id="mobile-form">
+      <div>
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up-desk" class="form-img">
+      </div>
+      <div class="form-text-container">
+        <p class="form-title">Stay updated!</p>
+        <p class="form-text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="list-container">
+          <li class="form-text list-item">
+            <img src="./assets/images/icon-list.svg"> Product discovery and building what matters
+          </li>
+          <li class="form-text list-item">
+            <img src="./assets/images/icon-list.svg"> Measuring to ensure updates are a success
+          </li>
+          <li class="form-text list-item">
+            <img src="./assets/images/icon-list.svg"> And much more!
+          </li>
+        </ul>
+        <div class="label-container">
+          <p>Email Address</p>
+          <p class="label-text error-text" id="error-mobile">Valid email required</p>
+        </div>
+        <input id="email-mobile" name="email" placeholder="email@company.com">
+        <button onclick="onSubmitMobile()">Subscribe to monthly newsletter</button>
+      </div>
+    </div>
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+</html>
